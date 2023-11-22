@@ -1,0 +1,13 @@
+{
+  "name": "inm320saa-bootstrap-assignment",
+  "version": "1.0.0",
+  "description": "Seneca INM320 SAA Bootstrap Assignment",
+  "scripts": {
+    "start": "lite-server --baseDir=\"public\""
+  },
+  "author": "eric castillo",
+  "license": "private",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
