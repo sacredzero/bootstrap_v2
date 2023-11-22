@@ -25,6 +25,12 @@ body {
   padding: 5px;
 }
 
+.fNormal2 {
+  font-family: "Mulish", Helvetica;
+  font-size: .8em;
+  padding: 5px;
+}
+
 .boldMed {
   font-family: "Mulish", Helvetica;
   font-size: 1.5em;
@@ -112,7 +118,11 @@ body {
 .header1 {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1em;
+}
+
+.headerColumn {
+  display: flex;
+  padding: 20px;
 }
 
 .left {
@@ -120,7 +130,28 @@ body {
 }
 
 .right {
+  display: flex;
   width: 50%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.pict {
+  height: 41px;
+  width: 41px;
+  min-height: 41px;
+  overflow: hidden;
+  margin-right: 20px;
+
+}
+
+.pict2 {
+  height: 16px;
+  width: 16px;
+  overflow: hidden;
+  margin-left: 10px;
+  margin-right: 10px;
+
 }
 
 .rounded,
