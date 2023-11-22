@@ -1,32 +1,31 @@
 html {
   background-color: rgb(50, 50, 50);
-  font-family: "Mulish", sans-serif;
 }
 
 body {
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
 }
 
 .bold {
   font-weight: bold;
   line-height: normal;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 1.2em;
 }
 
 .boldLarge {
-  font-size: 1.8em;
-  font-family: "Mulish", sans-serif;
+  font-size: 2em;
+  font-family: 'Mulish', sans-serif;
 }
 
 .fNormal {
-  font-family: "Mulish", sans-serif;
-  font-size: 0.9em;
+  font-family: 'Mulish', sans-serif;
+  font-size: .9em;
   padding: 5px;
 }
 
 .boldMed {
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 1.5em;
   font-weight: bold;
   padding: 5px;
@@ -40,7 +39,7 @@ body {
   align-content: center;
 }
 
-.burgerMenu {
+.burgerMenu{
   visibility: hidden;
 }
 
@@ -57,22 +56,29 @@ body {
   height: 50px;
   font-weight: bold;
   line-height: normal;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
   margin: 30px;
+
 }
 
 .mItem {
   display: flex;
   align-items: center;
   height: 50px;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
   margin-left: 30px;
 }
 
 .mItem:hover {
   background-color: rgb(65, 65, 65);
   font-weight: bold;
-  border-left: 5px solid rgb(169, 169, 169);
+  border-left: rgb(169, 169, 169);
+  border-left-style: solid;
+  border-left-width: 5px ;
+}
+
+.row {
+  margin: 0px;
 }
 
 .container-fluid {
@@ -92,7 +98,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 3em 0;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
 }
 
 .header-left {
@@ -105,24 +111,25 @@ body {
   align-items: center;
   justify-content: space-evenly;
   padding-top: 2em;
-  font-size: 0.8em;
+  font-size: .8em;
   /* width: 50%; */
 }
 
-.userPic {
-  width: 20%;
-  height: 20%;
-  min-width: 41px;
-  min-height: 41px;
-  border: 1px solid white;
+.userPic{
+  width: 15%;
+  height: 15%;
+  border-radius: 50%;
+
 }
 
 .rounded,
 .rounded2 {
-  border: 1px solid #dfe0eb;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: #dfe0eb;
   border-radius: 8px;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-top: .5em;
+  margin-bottom: .5em;
   background-color: white;
 }
 
@@ -135,12 +142,13 @@ body {
 }
 
 .rounded2:hover {
-  border: 1px solid;
+  border-style: solid;
+  border-width: 1.5px;
   border-color: #3751ff;
   color: #3751ff;
   border-radius: 8px;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-top: .5em;
+  margin-bottom: .5em;
   background-color: rgb(255, 255, 255);
 }
 
@@ -151,7 +159,9 @@ body {
 
 .midLeft {
   width: 70%;
-  border-right: 1px solid #dfe0eb;
+  border-right: #dfe0eb;
+  border-right-style: solid;
+  border-right-width: 1px ;
   padding: 20px;
 }
 
@@ -174,7 +184,9 @@ body {
   align-items: center;
   width: 100%;
   height: 20%;
-  border-bottom: 1px solid #dfe0eb;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #dfe0eb;
 }
 
 .liStats:last-child {
@@ -192,13 +204,13 @@ body {
   padding-top: 10px;
 }
 
-.bottom {
+.bottom{
   height: 30vh;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
   padding: 20px;
 }
 
-.bottom-title {
+.bottom-title{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -206,66 +218,72 @@ body {
   margin-bottom: 10px;
 }
 
-.bottom-subtitle {
+.bottom-subtitle{
   font-size: 0.8rem;
   margin: 10;
   margin-bottom: 15px;
 }
 
-.bottom-btn {
-  color: #3751ff;
+.bottom-btn{
+  color: #3751FF;
 }
 
-.bottom-stats {
+.bottom-stats{
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  border-bottom: 1px solid #dfe0eb;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #dfe0eb;
   padding: 15px 0;
 }
 
-.bottom-stats:last-child {
-  border-bottom: none;
-}
-
-.bottom-stats-left {
+.bottom-stats-left{
   padding: 20px 0;
 }
+
+
 
 @media screen and (max-width: 992px) {
   /* Adjust styles for smaller screens */
   nav {
     visibility: hidden;
   }
+
   .sideBar {
     height: 90px;
   }
-  .sideBarTitle {
+
+  .sideBarTitle{
     display: flex;
     justify-content: space-between;
     padding-bottom: 20px;
   }
-  .burgerMenu {
+
+  .burgerMenu{
     visibility: visible;
   }
-  .midGraph {
+
+  .midGraph{
     flex-direction: column;
   }
+
   .midLeft {
     width: 100%;
     border-right: none;
   }
+
   .midRight {
     width: 100%;
     border-top-style: solid;
     border-top-width: 1px;
     border-top-color: #dfe0eb;
   }
+
   .liStats {
     padding-top: 10px;
     padding-bottom: 10px;
   }
-}
 
-/*# sourceMappingURL=style.css.map */
+}
