@@ -48,12 +48,28 @@ body {
 }
 
 .sideBarTitle {
+  display: flex;
+  align-items: center;
   height: 50px;
   font-weight: bold;
   line-height: normal;
   font-family: "Mulish", Helvetica;
   margin: 30px;
+}
 
+.logo {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  padding-left: 3px;
+  background-color: rgba(55, 81, 255, 1);
+  border-radius: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.sideBarName {
+  padding-left: 10px;
 }
 
 .mItem {
@@ -61,6 +77,7 @@ body {
   align-items: center;
   height: 50px;
   font-family: "Mulish", Helvetica;
+  padding-left: 20px;
 }
 
 .mItem:hover {
@@ -69,6 +86,10 @@ body {
   border-left: rgb(169, 169, 169);
   border-left-style: solid;
   border-left-width: 5px ;
+}
+
+.img-2 {
+  padding: 10px;
 }
 
 .row {
