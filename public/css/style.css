@@ -31,6 +31,17 @@ body {
   padding: 5px;
 }
 
+.fSmall {
+  font-family: "Mulish", Helvetica;
+  font-size: .6em;
+}
+
+.fSmall2 {
+  font-family: "Mulish", Helvetica;
+  font-size: .7em;
+  color: #3751ff;
+}
+
 .boldMed {
   font-family: "Mulish", Helvetica;
   font-size: 1.5em;
@@ -127,6 +138,7 @@ body {
 
 .left {
   width: 50%;
+  align-items: center;
 }
 
 .right {
@@ -140,14 +152,17 @@ body {
   height: 41px;
   width: 41px;
   min-height: 41px;
+  min-width: 41px;
   overflow: hidden;
   margin-right: 20px;
+  margin-left: 10px;
 
 }
 
 .pict2 {
   height: 16px;
   width: 16px;
+  min-width: 16px;
   overflow: hidden;
   margin-left: 10px;
   margin-right: 10px;
@@ -236,6 +251,14 @@ body {
   padding-top: 10px;
 }
 
+.div-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.divider-line {
+  width: 100%;
+}
 
 @media screen and (max-width: 992px) {
   /* Adjust styles for smaller screens */
