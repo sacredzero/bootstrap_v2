@@ -65,6 +65,7 @@ body {
 
 .mItem:hover {
   background-color: rgb(65, 65, 65);
+  font-weight: bold;
   border-left: rgb(169, 169, 169);
   border-left-style: solid;
   border-left-width: 5px ;
@@ -101,7 +102,8 @@ body {
   width: 50%;
 }
 
-.rounded {
+.rounded,
+.rounded2 {
   border-style: solid;
   border-width: 1.5px;
   border-color: #dfe0eb;
@@ -109,6 +111,14 @@ body {
   margin-top: .5em;
   margin-bottom: .5em;
   background-color: white;
+}
+
+.txGray {
+  color: #afafaf;
+}
+
+.rounded2:hover .txGray {
+  color: #3751ff;
 }
 
 .rounded2:hover {
